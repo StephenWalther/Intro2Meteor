@@ -1,0 +1,28 @@
+<template name="realtime">
+
+    <h1>Realtime</h1>
+
+    <ul>
+        {{#each products}}
+        <li>
+            {{name}}
+            <a href="#" class="delete">delete</a>
+        </li>
+        {{/each}}
+    </ul>
+
+
+    <form>
+        <fieldset>
+            <legend>New Product</legend>
+
+            <label>
+                <input id="newProductName" />
+            </label>
+
+            <button>Add</button>
+
+        </fieldset>
+    </form>
+
+</template>

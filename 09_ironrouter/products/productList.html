@@ -1,0 +1,14 @@
+<template name="productList">
+
+
+
+    <ul>
+        {{#each listProducts}}
+        <li>
+            <a href="{{pathFor 'productDetail'}}">{{name}}</a>
+        </li>
+        {{/each}}
+    </ul>
+
+
+</template>

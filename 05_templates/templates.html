@@ -1,0 +1,25 @@
+<template name="templates">
+
+    {{#with someProduct}}
+
+        {{#if onSale}}
+            <img src="onSale.gif" width="200" />
+        {{/if}}
+
+        {{name}} - {{formatPrice price}}
+
+    {{/with}}
+
+    <hr />
+
+
+    <ul>
+        {{#each listProducts}}
+            <li>
+                {{name}} -  {{renderPrice}}
+            </li>
+        {{/each}}
+    </ul>
+
+
+</template>

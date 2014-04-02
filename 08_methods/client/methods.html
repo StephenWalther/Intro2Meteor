@@ -1,0 +1,37 @@
+<template name="methods">
+
+
+    <form>
+        <div style="background-color:lightgoldenrodyellow;padding:10px;margin:10px">
+            {{validationResult}}
+        </div>
+        <div>
+            <label>
+                Product Name:
+                <input id="productName" />
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Product Price:
+                <input id="productPrice" />
+            </label>
+        </div>
+
+        <input type="submit" value="Add Product" />
+
+    </form>
+
+
+
+    <ul>
+        {{#each listProducts}}
+        <li>
+            {{name}} -  {{price}}
+        </li>
+        {{/each}}
+    </ul>
+
+
+</template>
