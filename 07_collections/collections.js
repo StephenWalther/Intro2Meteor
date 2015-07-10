@@ -15,11 +15,13 @@ if (Meteor.isServer) {
 
 if (Meteor.isClient) {
 
-    Template.collections.listFruit = function() {
-        // get all fruit with a price greater than 6 and sort by the name
-        var results = Fruit.find({price:{$gt:6}}, {sort:{name:1}});
-        return results;
-    };
+    Template.collections.helpers({
+        listFruit: function() {
+            // get all fruit with a price greater than 6 and sort by the name
+            var results = Fruit.find({price:{$gt:6}}, {sort:{name:1}});
+            return results;
+        }
+    });
 
 
 }

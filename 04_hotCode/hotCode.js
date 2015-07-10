@@ -1,10 +1,10 @@
 if (Meteor.isClient) {
 
-        Template.hotCode.message = function() {
-
-            return 'Blah, blah, blah!';
-
-        };
+        Template.hotCode.helpers({
+            message: function() {
+                return 'Blah, blah, blah!';
+            }
+        });
 
 
 

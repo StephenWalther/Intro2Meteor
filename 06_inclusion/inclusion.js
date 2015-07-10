@@ -1,9 +1,12 @@
 if (Meteor.isClient) {
 
 
-    Template.inclusion.listProducts = function() {
-        return Collections.products.find();
-    }
+    Template.inclusion.helpers({
+        listProducts: function() {
+            return Collections.products.find();
+        }
+
+    });
 
 
 }

@@ -1,1 +1,1 @@
-//console.log('hello from server folder!')
+console.log('hello from server folder!')

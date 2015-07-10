@@ -1,1 +1,1 @@
-//console.log('Hello from client folder!');
+console.log('Hello from client folder!');

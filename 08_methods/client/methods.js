@@ -33,12 +33,13 @@ Template.methods.events({
 
 
 
-Template.methods.validationResult = function() {
-    return Session.get('validationResult');
-}
+Template.methods.helpers({
+    validationResult: function() {
+        return Session.get('validationResult');
+    },
 
+    listProducts: function() {
+        return Collections.products.find();
+    }
+});
 
-
-Template.methods.listProducts = function() {
-    return Collections.products.find();
-}
