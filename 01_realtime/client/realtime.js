@@ -1,8 +1,10 @@
 
 
-Template.realtime.products = function() {
-    return Collections.products.find();
-};
+Template.realtime.helpers({
+    products: function() {
+        return Collections.products.find();
+    }
+});
 
 
 Template.realtime.events({

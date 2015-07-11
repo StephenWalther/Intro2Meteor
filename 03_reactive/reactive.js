@@ -11,7 +11,7 @@ if (Meteor.isClient) {
 
             var message = Session.get('message');
 
-            console.log(message);
+            console.log('autorun ' + message);
 
         });
 

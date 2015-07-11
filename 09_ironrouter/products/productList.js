@@ -1,10 +1,11 @@
 
 if (Meteor.isClient) {
 
-    Template.productList.listProducts = function() {
-        return Collections.products.find();
-    }
-
+    Template.productList.helpers({
+        listProducts: function() {
+            return Collections.products.find();
+        }
+    });
 
 
 }
